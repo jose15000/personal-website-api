@@ -6,10 +6,23 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@huggingface/transformers": "^4.2.0",
+    "@langchain/textsplitters": "^1.0.1",
+    "@types/mdast": "^4.0.4",
+    "dotenv": "^17.4.2",
+    "drizzle-orm": "^1.0.0-rc.4",
+    "elysia": "latest",
+    "gray-matter": "^4.0.3",
+    "mdast": "^3.0.0",
+    "pg": "^8.22.0",
+    "remark-parse": "^11.0.0",
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "@types/pg": "^8.20.3",
+    "bun-types": "latest",
+    "drizzle-kit": "^1.0.0-rc.4",
+    "tsx": "^4.23.4"
   },
   "module": "src/index.js"
 }
