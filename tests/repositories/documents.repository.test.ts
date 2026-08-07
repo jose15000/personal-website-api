@@ -9,7 +9,7 @@ const mockFrom = mock().mockImplementation(() => ({
 }));
 const mockSelect = mock().mockReturnValue({ from: mockFrom });
 
-mock.module("../../src/index", () => ({
+mock.module("../../src/db", () => ({
     db: {
         select: mockSelect,
     }

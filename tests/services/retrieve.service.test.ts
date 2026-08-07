@@ -1,31 +1,23 @@
-import { describe, it, expect, mock, beforeEach } from "bun:test";
+import { describe, it, expect, mock, spyOn } from "bun:test";
 import { RetrieveService } from "../../src/services/retrieve.service";
-import { EmbbedingService } from "../../src/services/embedding.service";
 import { DocumentsRepository } from "../../src/repositories/documents.repository";
+import * as factory from "../../src/factories/embbedService.factory";
 
 describe("RetrieveService", () => {
-    let retrieveService: RetrieveService;
-    let embbedingService: EmbbedingService;
-    let documentsRepository: DocumentsRepository;
-
-    beforeEach(() => {
-        embbedingService = new EmbbedingService();
-        documentsRepository = new DocumentsRepository();
-        retrieveService = new RetrieveService(embbedingService, documentsRepository);
-    });
-
     it("should call embbed and findSimilar and return documents", async () => {
         const mockEmbedding = [0.1, 0.2, 0.3];
-        const mockDocuments = [{ id: 1, type: "project" as const, title: "Test", content: "Test Content", metadata: {}, embedding: mockEmbedding }];
+        const mockDocuments = [{ id: 1, type: "project" as const, title: "Test", content: "Test Content", metadata: {}, embedding: mockEmbedding, similarity: 0.10 }];
 
-        // Mock methods
-        embbedingService.embbed = mock().mockResolvedValue(mockEmbedding);
-        documentsRepository.findSimilar = mock().mockResolvedValue(mockDocuments);
+        const embbedMock = mock().mockResolvedValue(mockEmbedding);
+        spyOn(factory, "EmbbedingServiceFactory").mockResolvedValue({ embbed: embbedMock } as any);
+        
+        const repoSpy = spyOn(DocumentsRepository.prototype, "findSimilar").mockResolvedValue(mockDocuments as any);
 
+        const retrieveService = new RetrieveService();
         const result = await retrieveService.exec("my query");
 
-        expect(embbedingService.embbed).toHaveBeenCalledWith("my query");
-        expect(documentsRepository.findSimilar).toHaveBeenCalledWith(mockEmbedding);
+        expect(embbedMock).toHaveBeenCalledWith("my query");
+        expect(repoSpy).toHaveBeenCalledWith(mockEmbedding);
         expect(result).toEqual(mockDocuments);
     });
 });

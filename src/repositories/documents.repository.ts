@@ -1,5 +1,5 @@
 import { eq, sql } from "drizzle-orm";
-import { db } from "..";
+import { db } from "../db";
 import { professionalProfileTable } from "../schemas/schema";
 
 export class DocumentsRepository {

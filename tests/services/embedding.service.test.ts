@@ -25,7 +25,7 @@ describe("EmbbedingService", () => {
         
         expect(mockPipeline).toHaveBeenCalledWith(
             "feature-extraction",
-            "Xenova/multilingual-e5-base",
+            "Xenova/multilingual-e5-small",
             { device: "cpu" }
         );
     });

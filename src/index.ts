@@ -4,8 +4,8 @@ import { embbedController } from "./controllers/embbed";
 import { EmbbedingServiceFactory } from "./factories/embbedService.factory";
 import { retrievalController } from "./controllers/retrieve";
 import { ChunkController } from "./controllers/chunk";
+import { ChatController } from "./controllers/chat";
 
-export const db = drizzle(process.env.DATABASE_URL!);
 
 console.log("Iniciando carregamento do modelo de IA (pode demorar alguns minutos na primeira vez)...");
 await EmbbedingServiceFactory();
@@ -15,6 +15,7 @@ const app = new Elysia()
   .use(embbedController)
   .use(retrievalController)
   .use(ChunkController)
+  .use(ChatController)
   .get("/", () => "Hello Elysia")
   .listen(3000);
 
