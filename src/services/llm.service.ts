@@ -7,10 +7,11 @@ export class LlmService {
     private retrieve = new RetrieveService();
     private groq = new Groq({ apiKey: Bun.env.GROQ_API_KEY! })
 
-    async chat(input: string) {
+    async chat(input: ILlm) {
+        const userInput = input.userEntry ?? input.prompt;
 
-        const gatherKnowledge = await this.retrieve.exec(input);
-        
+        const gatherKnowledge = await this.retrieve.exec(userInput);
+
         console.log("=== Resultados do Retrieval ===");
         gatherKnowledge?.forEach((k, i) => {
             console.log(`[${i}] similaridade: ${k.similarity} - ${k.title}`);
@@ -23,8 +24,12 @@ export class LlmService {
             return await this.groq.chat.completions.create({
                 messages: [
                     {
+                        role: "system",
+                        content: basicPrompt(),
+                    },
+                    {
                         role: "user",
-                        content: basicPrompt(input)
+                        content: userInput
                     }
                 ],
                 model: "llama-3.3-70b-versatile"
@@ -36,8 +41,12 @@ export class LlmService {
         return await this.groq.chat.completions.create({
             messages: [
                 {
+                    role: "system",
+                    content: contextPrompt(combinedContext)
+                },
+                {
                     role: "user",
-                    content: contextPrompt(combinedContext, input)
+                    content: userInput
                 }
             ],
             model: "llama-3.3-70b-versatile"

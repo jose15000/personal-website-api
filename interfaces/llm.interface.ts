@@ -1,4 +1,4 @@
 export interface ILlm {
     prompt: string;
-    userEntry: string;
+    userEntry?: string;
 }
