@@ -25,7 +25,7 @@ const app = new Elysia()
   .use(ChunkController)
   .use(ChatController)
   .get("/", () => "Hello Elysia")
-  .listen(3000);
+  .listen(process.env.PORT ? parseInt(process.env.PORT) : 3000);
 
 
 console.log(
