@@ -13,13 +13,8 @@ RUN bun install --frozen-lockfile
 
 # Copia o restante do código
 COPY src/ ./src/
-COPY drizzle/ ./drizzle/
 COPY drizzle.config.ts ./
 COPY tsconfig.json ./
-COPY documents/ ./documents/
-COPY interfaces/ ./interfaces/
-COPY types/ ./types/
-COPY utils/ ./utils/
 
 EXPOSE 3000
 
