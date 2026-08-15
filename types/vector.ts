@@ -1,6 +1,6 @@
 import { customType } from "drizzle-orm/pg-core/columns";
 
-export const vector = (dimensions: number) => customType<{ data: number[], driverData: string }>({
+export const vector = customType<{ data: number[], driverData: string }>({
     dataType() {
         // pgvector doesn't support dimension modifiers in the type
         return 'vector';
