@@ -1,6 +1,5 @@
-import { json, serial, text } from "drizzle-orm/pg-core/columns";
+import { json, serial, text, vector } from "drizzle-orm/pg-core";
 import { pgTable } from "drizzle-orm/pg-core/table";
-import { vector } from "../../types/vector";
 
 export const professionalProfileTable = pgTable("profile", {
     id: serial().primaryKey(),
@@ -8,5 +7,5 @@ export const professionalProfileTable = pgTable("profile", {
     content: text(),
     type: text({ enum: ["project", "experience", "profile"] }),
     metadata: json(),
-    embedding: vector("embedding").notNull()
-})
+    embedding: vector("embedding", { dimensions: 384 }).notNull()
+});

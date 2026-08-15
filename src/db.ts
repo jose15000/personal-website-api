@@ -21,7 +21,7 @@ export async function initDb(): Promise<void> {
                 "content" text,
                 "type" text,
                 "metadata" json,
-                "embedding" vector NOT NULL
+                "embedding" vector(384) NOT NULL
             );
         `);
         console.log("Tabela 'profile' verificada/criada.");
@@ -53,7 +53,7 @@ export async function initDb(): Promise<void> {
                     SELECT 1 FROM information_schema.columns 
                     WHERE table_name='profile' AND column_name='embedding'
                 ) THEN
-                    ALTER TABLE "profile" ADD COLUMN "embedding" vector NOT NULL;
+                    ALTER TABLE "profile" ADD COLUMN "embedding" vector(384) NOT NULL;
                 END IF;
             END $$;
         `);
@@ -67,9 +67,9 @@ export async function initDb(): Promise<void> {
             BEGIN
                 IF EXISTS (
                     SELECT 1 FROM information_schema.columns 
-                    WHERE table_name='profile' AND column_name='embedding' AND data_type != 'USER-DEFINED'
+                    WHERE table_name='profile' AND column_name='embedding'
                 ) THEN
-                    ALTER TABLE "profile" ALTER COLUMN "embedding" TYPE vector USING "embedding"::vector;
+                    ALTER TABLE "profile" ALTER COLUMN "embedding" TYPE vector(384) USING "embedding"::vector(384);
                 END IF;
             END $$;
         `);
