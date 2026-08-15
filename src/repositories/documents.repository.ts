@@ -33,15 +33,25 @@ export class DocumentsRepository {
 
     }
     async save(data: typeof professionalProfileTable.$inferInsert) {
-        return await db.insert(professionalProfileTable)
-            .values(data)
-            .returning();
+        try {
+            return await db.insert(professionalProfileTable)
+                .values(data)
+                .returning();
+        } catch (error) {
+            console.error("Erro ao salvar documento:", error instanceof Error ? error.message : error);
+            throw error;
+        }
     }
 
     async saveMany(data: (typeof professionalProfileTable.$inferInsert)[]) {
-        return await db.insert(professionalProfileTable)
-            .values(data)
-            .returning();
+        try {
+            return await db.insert(professionalProfileTable)
+                .values(data)
+                .returning();
+        } catch (error) {
+            console.error("Erro ao salvar múltiplos documentos (saveMany):", error instanceof Error ? error.message : error);
+            throw error;
+        }
     }
 
     async deleteAll() {
