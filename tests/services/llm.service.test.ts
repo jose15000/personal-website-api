@@ -1,5 +1,6 @@
 import { describe, test, expect, spyOn, beforeEach } from "bun:test";
 import { LlmService } from "../../src/services/llm.service";
+import { RetrieveService } from "../../src/services/retrieve.service";
 
 describe("LlmService", () => {
     beforeEach(() => {
@@ -27,20 +28,26 @@ describe("LlmService", () => {
             usage: { prompt_tokens: 10, completion_tokens: 10, total_tokens: 20 }
         } as any);
 
+        spyOn(RetrieveService.prototype, "exec").mockResolvedValue([] as any);
+
         const mockInput = {
             prompt: "Um teste de prompt",
             userEntry: "Uma entrada de usuario de teste"
         };
 
-        const result = await llmService.exec(mockInput);
+        const result = await llmService.chat(mockInput);
 
         expect(createSpy).toHaveBeenCalledTimes(1);
         
         expect(createSpy).toHaveBeenCalledWith({
             messages: [
                 {
+                    role: "system",
+                    content: expect.any(String)
+                },
+                {
                     role: "user",
-                    content: mockInput.prompt
+                    content: mockInput.userEntry
                 }
             ],
             model: "llama-3.3-70b-versatile"

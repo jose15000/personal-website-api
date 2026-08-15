@@ -28,7 +28,7 @@ export class DocumentsRepository {
                 .orderBy(similarity)
                 .limit(limit);
         } catch (e) {
-            console.error(JSON.stringify(e, null, 2))
+            console.error("Error finding similar documents:", e);
         }
 
     }
