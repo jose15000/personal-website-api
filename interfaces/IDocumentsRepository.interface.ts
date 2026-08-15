@@ -6,5 +6,5 @@ export interface IDocumentsRepository {
     content?: string;
     type?: "project" | "experience";
     metadata?: {};
-    embbeding?: number[];
+    embedding?: number[];
 }

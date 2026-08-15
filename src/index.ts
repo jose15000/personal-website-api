@@ -8,9 +8,13 @@ import { ChatController } from "./controllers/chat";
 import cors from "@elysiajs/cors";
 
 
+import { initDb } from "./db";
+
 console.log("Iniciando carregamento do modelo de IA (pode demorar alguns minutos na primeira vez)...");
 await EmbbedingServiceFactory();
 console.log("Modelo de IA carregado com sucesso!");
+
+await initDb();
 
 const app = new Elysia()
   .use(
