@@ -8,5 +8,5 @@ export const professionalProfileTable = pgTable("profile", {
     content: text(),
     type: text({ enum: ["project", "experience", "profile"] }),
     metadata: json(),
-    embedding: vector(384)("embbeding").notNull()
+    embbeding: vector(384).notNull()
 })
