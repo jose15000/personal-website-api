@@ -1,4 +1,4 @@
-import { ILlm } from "../../interfaces/llm.interface";
+
 import Groq from "groq-sdk";
 import { RetrieveService } from "./retrieve.service";
 import { basicPrompt, contextPrompt } from "../../utils/prompts";
@@ -7,10 +7,9 @@ export class LlmService {
     private retrieve = new RetrieveService();
     private groq = new Groq({ apiKey: Bun.env.GROQ_API_KEY! })
 
-    async chat(input: ILlm) {
-        const userInput = input.userEntry ?? input.prompt;
+    async chat(input: string) {
 
-        const gatherKnowledge = await this.retrieve.exec(userInput);
+        const gatherKnowledge = await this.retrieve.exec(input);
 
         console.log("=== Resultados do Retrieval ===");
         gatherKnowledge?.forEach((k, i) => {
@@ -25,14 +24,14 @@ export class LlmService {
                 messages: [
                     {
                         role: "system",
-                        content: basicPrompt(),
+                        content: basicPrompt,
                     },
                     {
                         role: "user",
-                        content: userInput
+                        content: input
                     }
                 ],
-                model: "llama-3.3-70b-versatile"
+                model: "openai/gpt-oss-120b"
             });
         }
 
@@ -46,7 +45,7 @@ export class LlmService {
                 },
                 {
                     role: "user",
-                    content: userInput
+                    content: input
                 }
             ],
             model: "openai/gpt-oss-120b"
