@@ -5,7 +5,9 @@ const llmService = new LlmService();
 
 export const ChatController = new Elysia({ prefix: "/chat" })
     .post("/", async ({ body }) => {
-        return await llmService.chat(body);
+        return await llmService.chat(body.prompt);
     }, {
-        body: t.String()
+        body: t.Object({
+            prompt: t.String()
+        })
     });
