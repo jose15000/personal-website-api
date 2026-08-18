@@ -1,0 +1,22 @@
+{
+  "nodes": [
+    {
+      "graphType": "Code",
+      "id": "109fcd79-6bc8-439c-abc1-0bbd5bd1ec64",
+      "type": "code_change",
+      "data": {
+        "file": "context/codeatlas-config.json",
+        "agentThought": "decision",
+        "description": "Criada configuração inicial de indexação para a pasta /context do projeto",
+        "timestamp": "2026-08-17T22:24:55.897Z"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "109fcd79-6bc8-439c-abc1-0bbd5bd1ec64",
+      "to": "context/codeatlas-config.json",
+      "type": "MODIFIES"
+    }
+  ]
+}

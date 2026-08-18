@@ -1,6 +1,14 @@
 ---
 title: Experiência profissional
 type: experience
+probable_questions:
+  - Onde José Henrique já trabalhou?
+  - Qual é a experiência de trabalho e histórico profissional de José Henrique?
+  - O que José Henrique fez na empresa Go Digital e PandaFit?
+  - Quais eram as responsabilidades de José Henrique na Universidade Tiradentes?
+  - O que José Henrique desenvolveu na empresa The Public House?
+  - Como foi a experiência de estágio de José Henrique na Rede Primavera?
+  - Quais projetos e tecnologias José Henrique utilizou em seus empregos anteriores (Stripe, NestJS, Next.js, Scrum, Figma)?
 ---
 
 # Experiência profissional

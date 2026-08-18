@@ -5,9 +5,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "bun run --watch src/index.ts",
     "start": "bun run src/index.ts",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "mcp-atlas": "bunx @contextatlas/core"
   },
   "dependencies": {
+    "@contextatlas/core": "^1.1.1",
     "@elysiajs/cors": "^1.4.2",
     "@huggingface/transformers": "^4.2.0",
     "@langchain/textsplitters": "^1.0.1",
@@ -27,7 +29,8 @@
     "@types/pg": "^8.20.3",
     "bun-types": "latest",
     "drizzle-kit": "^1.0.0-rc.4",
-    "tsx": "^4.23.4"
+    "tsx": "^4.23.4",
+    "typescript": "5.7.3"
   },
   "module": "src/index.js"
 }

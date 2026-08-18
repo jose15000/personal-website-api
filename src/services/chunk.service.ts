@@ -42,9 +42,12 @@ export class ChunkService {
                     continue;
                 }
 
-                // Enriquecimento de Contexto: Adicionamos de onde esse pedaço de texto veio
-                // para que o modelo de vetor entenda o chunk isolado.
-                const textToEmbbed = `Documento: ${data.title}\nTipo: ${data.type}\n\n${cleanContent}`;
+                // Enriquecimento de Contexto: Inclui as perguntas prováveis para aproximar a similaridade vetorial das consultas dos usuários
+                const questionsText = Array.isArray(data.probable_questions)
+                    ? `Perguntas Frequentes Relacionadas:\n- ${data.probable_questions.join("\n- ")}\n\n`
+                    : "";
+
+                const textToEmbbed = `Documento: ${data.title}\nTipo: ${data.type}\n${questionsText}Conteúdo:\n${cleanContent}`;
 
                 // O modelo "multilingual-e5-small" EXIGE o prefixo "passage: " para documentos e "query: " para buscas.
                 // Isso melhora DRASTICAMENTE a qualidade do retrieval.

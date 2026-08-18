@@ -1,0 +1,880 @@
+{
+  "nodes": [
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/drizzle.config.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/drizzle.config.ts",
+        "name": "drizzle.config.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/context/contextatlas.client.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/context/contextatlas.client.ts",
+        "name": "contextatlas.client.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts",
+        "name": "embbedInterface.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts#IEmbbed",
+      "type": "interface",
+      "data": {
+        "name": "IEmbbed"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/Ichunk.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/interfaces/Ichunk.ts",
+        "name": "Ichunk.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/Ichunk.ts#IChunk",
+      "type": "interface",
+      "data": {
+        "name": "IChunk"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentsRepository.interface.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentsRepository.interface.ts",
+        "name": "IDocumentsRepository.interface.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentsRepository.interface.ts#IDocumentsRepository",
+      "type": "interface",
+      "data": {
+        "name": "IDocumentsRepository"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts",
+        "name": "IDocumentToSave.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts#IDocumentToSave",
+      "type": "interface",
+      "data": {
+        "name": "IDocumentToSave"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/pythonChunk.interface.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/interfaces/pythonChunk.interface.ts",
+        "name": "pythonChunk.interface.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/interfaces/pythonChunk.interface.ts#PythonChunk",
+      "type": "interface",
+      "data": {
+        "name": "PythonChunk"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+        "name": "db.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/db.ts#initDb",
+      "type": "function",
+      "data": {
+        "name": "initDb"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+        "name": "index.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/tests/scratch.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/tests/scratch.ts",
+        "name": "scratch.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/types/LangChainDocument.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/types/LangChainDocument.ts",
+        "name": "LangChainDocument.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/types/vector.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/types/vector.ts",
+        "name": "vector.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/utils/prompts.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/utils/prompts.ts",
+        "name": "prompts.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts",
+        "name": "readMarkdown.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts#ReadMarkdown",
+      "type": "function",
+      "data": {
+        "name": "ReadMarkdown"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/utils/saveDocument.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/utils/saveDocument.ts",
+        "name": "saveDocument.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/utils/saveDocument.ts#saveDocument",
+      "type": "function",
+      "data": {
+        "name": "saveDocument"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chat.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chat.ts",
+        "name": "chat.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts",
+        "name": "chunk.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/controllers/embbed.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/controllers/embbed.ts",
+        "name": "embbed.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/controllers/retrieve.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/controllers/retrieve.ts",
+        "name": "retrieve.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+        "name": "embbedService.factory.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts#EmbbedingServiceFactory",
+      "type": "function",
+      "data": {
+        "name": "EmbbedingServiceFactory"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+        "name": "documents.repository.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "type": "class",
+      "data": {
+        "name": "DocumentsRepository"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.findByType",
+      "type": "method",
+      "data": {
+        "name": "DocumentsRepository.findByType",
+        "className": "DocumentsRepository",
+        "methodName": "findByType"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.findSimilar",
+      "type": "method",
+      "data": {
+        "name": "DocumentsRepository.findSimilar",
+        "className": "DocumentsRepository",
+        "methodName": "findSimilar"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.save",
+      "type": "method",
+      "data": {
+        "name": "DocumentsRepository.save",
+        "className": "DocumentsRepository",
+        "methodName": "save"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.saveMany",
+      "type": "method",
+      "data": {
+        "name": "DocumentsRepository.saveMany",
+        "className": "DocumentsRepository",
+        "methodName": "saveMany"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.deleteAll",
+      "type": "method",
+      "data": {
+        "name": "DocumentsRepository.deleteAll",
+        "className": "DocumentsRepository",
+        "methodName": "deleteAll"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/schemas/schema.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/schemas/schema.ts",
+        "name": "schema.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+        "name": "chunk.service.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService",
+      "type": "class",
+      "data": {
+        "name": "ChunkService"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService.processAndSave",
+      "type": "method",
+      "data": {
+        "name": "ChunkService.processAndSave",
+        "className": "ChunkService",
+        "methodName": "processAndSave"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts",
+        "name": "embedding.service.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService",
+      "type": "class",
+      "data": {
+        "name": "EmbbedingService"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.initialize",
+      "type": "method",
+      "data": {
+        "name": "EmbbedingService.initialize",
+        "className": "EmbbedingService",
+        "methodName": "initialize"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.embbed",
+      "type": "method",
+      "data": {
+        "name": "EmbbedingService.embbed",
+        "className": "EmbbedingService",
+        "methodName": "embbed"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+        "name": "llm.service.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts#LlmService",
+      "type": "class",
+      "data": {
+        "name": "LlmService"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts#LlmService.chat",
+      "type": "method",
+      "data": {
+        "name": "LlmService.chat",
+        "className": "LlmService",
+        "methodName": "chat"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+      "type": "file",
+      "data": {
+        "path": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+        "name": "retrieve.service.ts"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService",
+      "type": "class",
+      "data": {
+        "name": "RetrieveService"
+      }
+    },
+    {
+      "graphType": "Code",
+      "id": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService.exec",
+      "type": "method",
+      "data": {
+        "name": "RetrieveService.exec",
+        "className": "RetrieveService",
+        "methodName": "exec"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/drizzle.config.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/dotenv/config.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/drizzle.config.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-kit/index.d.mts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/context/contextatlas.client.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/@contextatlas/core/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts#IEmbbed",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/interfaces/Ichunk.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/Ichunk.ts#IChunk",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentsRepository.interface.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentsRepository.interface.ts#IDocumentsRepository",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts#IDocumentToSave",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/interfaces/pythonChunk.interface.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/pythonChunk.interface.ts#PythonChunk",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/db.ts#initDb",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/node-postgres/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/elysia/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/node-postgres/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/controllers/embbed.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/controllers/retrieve.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chat.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/@elysiajs/cors/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/index.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/tests/scratch.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/@huggingface/transformers/types/transformers.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/types/vector.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/pg-core/columns/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts#ReadMarkdown",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts",
+      "to": "fs/promises",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts",
+      "to": "path",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/utils/saveDocument.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/utils/saveDocument.ts#saveDocument",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chat.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/elysia/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chat.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/elysia/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/embbed.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/elysia/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/embbed.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/retrieve.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/elysia/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/controllers/retrieve.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts#EmbbedingServiceFactory",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts#EmbbedingServiceFactory",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.initialize",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.findByType",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.findSimilar",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.save",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.saveMany",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.deleteAll",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/db.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/schemas/schema.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/schemas/schema.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/pg-core/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/schemas/schema.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/drizzle-orm/pg-core/table.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService.processAndSave",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService.processAndSave",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.deleteAll",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService.processAndSave",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.embbed",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts#ChunkService.processAndSave",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.saveMany",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/@langchain/textsplitters/dist/index.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/gray-matter/gray-matter.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService",
+      "to": "IEmbbed",
+      "type": "IMPLEMENTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.initialize",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.embbed",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.embbed",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.extractor",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/@huggingface/transformers/types/transformers.d.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts#LlmService",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts#LlmService",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts#LlmService.chat",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts#LlmService.chat",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService.exec",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/node_modules/groq-sdk/index.d.mts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/utils/prompts.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService.exec",
+      "type": "DEFINES"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService.exec",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts#EmbbedingService.embbed",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts#RetrieveService.exec",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts#DocumentsRepository.findSimilar",
+      "type": "CALLS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts",
+      "type": "IMPORTS"
+    },
+    {
+      "from": "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts",
+      "to": "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts",
+      "type": "IMPORTS"
+    }
+  ],
+  "mtimes": {
+    "/home/jooj/Documents/projects/personal-website-server/context/contextatlas.client.ts": 1787005389083.3418,
+    "/home/jooj/Documents/projects/personal-website-server/drizzle.config.ts": 1786752542219.8079,
+    "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentToSave.ts": 1786752542219.8079,
+    "/home/jooj/Documents/projects/personal-website-server/interfaces/IDocumentsRepository.interface.ts": 1786757013851.9346,
+    "/home/jooj/Documents/projects/personal-website-server/interfaces/Ichunk.ts": 1786752542219.9614,
+    "/home/jooj/Documents/projects/personal-website-server/interfaces/embbedInterface.ts": 1786752542219.9614,
+    "/home/jooj/Documents/projects/personal-website-server/interfaces/pythonChunk.interface.ts": 1786752542219.9614,
+    "/home/jooj/Documents/projects/personal-website-server/src/controllers/chat.ts": 1786995585287.8076,
+    "/home/jooj/Documents/projects/personal-website-server/src/controllers/chunk.ts": 1786752542220.3494,
+    "/home/jooj/Documents/projects/personal-website-server/src/controllers/embbed.ts": 1786752542220.3494,
+    "/home/jooj/Documents/projects/personal-website-server/src/controllers/retrieve.ts": 1786752542220.3494,
+    "/home/jooj/Documents/projects/personal-website-server/src/db.ts": 1786823059228.2175,
+    "/home/jooj/Documents/projects/personal-website-server/src/factories/embbedService.factory.ts": 1786752542220.5803,
+    "/home/jooj/Documents/projects/personal-website-server/src/index.ts": 1786995262427.6858,
+    "/home/jooj/Documents/projects/personal-website-server/src/repositories/documents.repository.ts": 1786822496822.05,
+    "/home/jooj/Documents/projects/personal-website-server/src/schemas/schema.ts": 1786823051492.2097,
+    "/home/jooj/Documents/projects/personal-website-server/src/services/chunk.service.ts": 1787002244853.877,
+    "/home/jooj/Documents/projects/personal-website-server/src/services/embedding.service.ts": 1786752542220.8777,
+    "/home/jooj/Documents/projects/personal-website-server/src/services/llm.service.ts": 1786827755166.2217,
+    "/home/jooj/Documents/projects/personal-website-server/src/services/retrieve.service.ts": 1786752542220.8777,
+    "/home/jooj/Documents/projects/personal-website-server/test-ast.ts": 1786752542220.8777,
+    "/home/jooj/Documents/projects/personal-website-server/tests/repositories/documents.repository.test.ts": 1786752542221.057,
+    "/home/jooj/Documents/projects/personal-website-server/tests/scratch.ts": 1786752542221.1262,
+    "/home/jooj/Documents/projects/personal-website-server/tests/services/embedding.service.test.ts": 1786752542221.1262,
+    "/home/jooj/Documents/projects/personal-website-server/tests/services/llm.service.test.ts": 1786756377833.8938,
+    "/home/jooj/Documents/projects/personal-website-server/tests/services/retrieve.service.test.ts": 1786756538929.9094,
+    "/home/jooj/Documents/projects/personal-website-server/types/LangChainDocument.ts": 1786752542221.4077,
+    "/home/jooj/Documents/projects/personal-website-server/types/vector.ts": 1786822483658.0664,
+    "/home/jooj/Documents/projects/personal-website-server/utils/prompts.ts": 1786827653104.1106,
+    "/home/jooj/Documents/projects/personal-website-server/utils/readMarkdown.ts": 1786752542221.6255,
+    "/home/jooj/Documents/projects/personal-website-server/utils/saveDocument.ts": 1786752542221.6255
+  }
+}

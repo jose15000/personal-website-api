@@ -1,6 +1,15 @@
 ---
 title: José Henrique
 type: profile
+probable_questions:
+  - Quem é José Henrique?
+  - Qual é o resumo profissional ou biografia de José Henrique?
+  - Quais são as especialidades, tecnologias e linguagens que José Henrique domina?
+  - Qual a experiência de José Henrique com TypeScript, React, Next.js, Node.js e NestJS?
+  - José Henrique sabe inglês? Qual o nível de inglês dele?
+  - Qual é a filosofia de desenvolvimento e práticas de engenharia de José Henrique?
+  - José Henrique tem experiência com Inteligência Artificial, LLMs, Claude e MCP?
+  - Quais bancos de dados e ferramentas DevOps José Henrique utiliza (PostgreSQL, MongoDB, Docker, CI/CD)?
 ---
 
 # José Henrique

@@ -1,6 +1,12 @@
 ---
 title: My Projects
 type: project
+probable_questions:
+  - Quais projetos José Henrique desenvolveu ou criou?
+  - O que é o projeto LioApply e quais tecnologias ele usa?
+  - O que é o projeto Context Atlas e para que serve?
+  - José Henrique tem projetos open source ou bibliotecas publicadas?
+  - Quais aplicações Full Stack José Henrique já construiu?
 ---
 
 
