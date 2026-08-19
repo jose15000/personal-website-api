@@ -17,7 +17,6 @@ COPY types/ ./types/
 COPY interfaces/ ./interfaces/
 COPY utils/ ./utils/
 COPY documents/ ./documents/
-COPY drizzle/ ./drizzle/
 COPY drizzle.config.ts ./
 COPY tsconfig.json ./
 
