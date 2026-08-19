@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
 
 # Instala dependências
 COPY package.json bun.lock ./
-RUN bun install --frozen-lockfile
+RUN bun install
 
 # Copia o restante do código
 COPY src/ ./src/
