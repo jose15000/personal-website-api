@@ -1,7 +1,10 @@
 import { drizzle } from "drizzle-orm/node-postgres";
 import { sql } from "drizzle-orm";
 
-export const db = drizzle(process.env.DATABASE_URL!);
+export const db = process.env.DATABASE_URL
+    ? drizzle(process.env.DATABASE_URL)
+    : ({} as ReturnType<typeof drizzle>);
+
 
 export async function initDb(): Promise<void> {
     console.log("Inicializando e alinhando schema do banco de dados...");
@@ -20,6 +23,7 @@ export async function initDb(): Promise<void> {
                 "title" text,
                 "content" text,
                 "type" text,
+                "locale" text,
                 "metadata" json,
                 "embedding" vector(384) NOT NULL
             );
@@ -27,6 +31,22 @@ export async function initDb(): Promise<void> {
         console.log("Tabela 'profile' verificada/criada.");
     } catch (error) {
         console.error("Erro ao criar tabela 'profile':", error);
+    }
+
+    try {
+        await db.execute(sql`
+            DO $$
+            BEGIN
+                IF NOT EXISTS (
+                    SELECT 1 FROM information_schema.columns 
+                    WHERE table_name='profile' AND column_name='locale'
+                ) THEN
+                    ALTER TABLE "profile" ADD COLUMN "locale" text;
+                END IF;
+            END $$;
+        `);
+    } catch (error) {
+        console.error("Erro ao adicionar coluna 'locale':", error);
     }
 
     try {

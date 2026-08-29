@@ -26,10 +26,10 @@ export class ChunkService {
         await this.documentsRepo.deleteAll();
         console.log("Base de dados limpa com sucesso!");
 
-        for (const text of getMarkdowns) {
-            if (text === "erro") continue;
+        for (const fileObj of getMarkdowns) {
+            const { data, content } = matter(fileObj.content);
 
-            const { data, content } = matter(text);
+            const itemLocale = data.locale || fileObj.locale || "pt-BR";
 
             const chunks = await splitter.createDocuments([content]);
 
@@ -47,7 +47,7 @@ export class ChunkService {
                     ? `Perguntas Frequentes Relacionadas:\n- ${data.probable_questions.join("\n- ")}\n\n`
                     : "";
 
-                const textToEmbbed = `Documento: ${data.title}\nTipo: ${data.type}\n${questionsText}Conteúdo:\n${cleanContent}`;
+                const textToEmbbed = `Documento: ${data.title}\nTipo: ${data.type}\nLocale: ${itemLocale}\n${questionsText}Conteúdo:\n${cleanContent}`;
 
                 // O modelo "multilingual-e5-small" EXIGE o prefixo "passage: " para documentos e "query: " para buscas.
                 // Isso melhora DRASTICAMENTE a qualidade do retrieval.
@@ -55,7 +55,8 @@ export class ChunkService {
 
                 documentsToSave.push({
                     title: data.title,
-                    type: data.type, 
+                    type: data.type,
+                    locale: itemLocale,
                     content: textToEmbbed,
                     embedding: embeddingVector
                 });

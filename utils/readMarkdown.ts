@@ -3,9 +3,14 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 
 
-export async function ReadMarkdown(): Promise<string[]> {
+export interface IMarkdownFile {
+    content: string;
+    locale: string;
+}
 
-    const text: string[] = [];
+export async function ReadMarkdown(): Promise<IMarkdownFile[]> {
+
+    const filesData: IMarkdownFile[] = [];
     try {
         const folderPath = path.resolve(__dirname, '..', 'documents');
 
@@ -19,15 +24,25 @@ export async function ReadMarkdown(): Promise<string[]> {
             const read = await fs.readFile(fullPath, 'utf-8');
 
             console.log(`\n--- Conteúdo do arquivo: ${file} ---`);
-            console.log(read);
 
-            text.push(read);
+            // Detect locale from filename (e.g. profile.en.md -> en, profile.pt-BR.md -> pt-BR)
+            const parts = file.split('.');
+            let fileLocale = "pt-BR"; // default locale for current document set
+            if (parts.length > 2) {
+                fileLocale = parts[parts.length - 2];
+            }
+
+            filesData.push({
+                content: read,
+                locale: fileLocale
+            });
         }
-        return text
+        return filesData;
 
     } catch (error) {
         console.error("Erro ao mapear o caminho ou ler os arquivos:", error);
-        return ["erro"];
+        return [];
     }
 }
+
 

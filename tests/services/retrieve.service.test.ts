@@ -17,7 +17,7 @@ describe("RetrieveService", () => {
         const result = await retrieveService.exec("my query");
 
         expect(embbedMock).toHaveBeenCalledWith("query: my query");
-        expect(repoSpy).toHaveBeenCalledWith(mockEmbedding);
+        expect(repoSpy).toHaveBeenCalledWith(mockEmbedding, 5, undefined);
         expect(result).toEqual(mockDocuments);
         repoSpy.mockRestore();
     });

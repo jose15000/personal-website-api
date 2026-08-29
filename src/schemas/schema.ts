@@ -6,6 +6,7 @@ export const professionalProfileTable = pgTable("profile", {
     title: text(),
     content: text(),
     type: text({ enum: ["project", "experience", "profile"] }),
+    locale: text(),
     metadata: json(),
     embedding: vector("embedding", { dimensions: 384 }).notNull()
 });

@@ -7,9 +7,9 @@ export class LlmService {
     private retrieve = new RetrieveService();
     private groq = new Groq({ apiKey: Bun.env.GROQ_API_KEY! })
 
-    async chat(input: string) {
+    async chat(input: string, locale?: string) {
 
-        const gatherKnowledge = await this.retrieve.exec(input);
+        const gatherKnowledge = await this.retrieve.exec(input, locale);
 
         console.log("=== Resultados do Retrieval ===");
         gatherKnowledge?.forEach((k, i) => {
@@ -24,7 +24,7 @@ export class LlmService {
                 messages: [
                     {
                         role: "system",
-                        content: basicPrompt,
+                        content: basicPrompt(locale),
                     },
                     {
                         role: "user",
@@ -41,7 +41,7 @@ export class LlmService {
             messages: [
                 {
                     role: "system",
-                    content: contextPrompt(combinedContext)
+                    content: contextPrompt(combinedContext, locale)
                 },
                 {
                     role: "user",
