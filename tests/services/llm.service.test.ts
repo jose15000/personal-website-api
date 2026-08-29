@@ -47,10 +47,10 @@ describe("LlmService", () => {
                 },
                 {
                     role: "user",
-                    content: mockInput.userEntry
+                    content: mockInput as any
                 }
             ],
-            model: "llama-3.3-70b-versatile"
+            model: "openai/gpt-oss-120b"
         });
     
         expect(result.choices[0].message.content).toBe("Resposta mockada para o teste!");

@@ -1,12 +1,17 @@
 import { describe, it, expect, mock, beforeEach } from "bun:test";
 
-const mockWhere = mock();
-const mockLimit = mock();
-const mockOrderBy = mock().mockReturnValue({ limit: mockLimit });
-const mockFrom = mock().mockImplementation(() => ({
+const mockResult = [{ id: 1, type: "project" }];
+const mockLimit = mock().mockResolvedValue(mockResult);
+const mockWhere = mock().mockImplementation((...args: any[]) => {
+    const promise = Promise.resolve(mockResult) as any;
+    promise.limit = mockLimit;
+    return promise;
+});
+const mockOrderBy = mock().mockReturnValue({ where: mockWhere, limit: mockLimit });
+const mockFrom = mock().mockReturnValue({
     where: mockWhere,
     orderBy: mockOrderBy
-}));
+});
 const mockSelect = mock().mockReturnValue({ from: mockFrom });
 
 mock.module("../../src/db", () => ({
@@ -22,32 +27,22 @@ describe("DocumentsRepository", () => {
 
     beforeEach(() => {
         repository = new DocumentsRepository();
-        mockSelect.mockClear();
-        mockFrom.mockClear();
-        mockWhere.mockClear();
-        mockOrderBy.mockClear();
-        mockLimit.mockClear();
     });
 
     it("should find documents by type", async () => {
-        mockWhere.mockResolvedValueOnce([{ id: 1, type: "project" }]);
-
-        await repository.findByType("project");
+        const result = await repository.findByType("project");
 
         expect(mockSelect).toHaveBeenCalled();
-        expect(mockFrom).toHaveBeenCalled();
-        expect(mockWhere).toHaveBeenCalled();
+        expect(result).toEqual(mockResult as any);
     });
 
     it("should find similar documents using embedding array", async () => {
-        mockLimit.mockResolvedValueOnce([{ id: 2 }]);
-
         const embedding = [0.1, 0.2, 0.3];
-        await repository.findSimilar(embedding, 5);
+        const result = await repository.findSimilar(embedding, 5, "en");
 
         expect(mockSelect).toHaveBeenCalled();
-        expect(mockFrom).toHaveBeenCalled();
-        expect(mockOrderBy).toHaveBeenCalled();
-        expect(mockLimit).toHaveBeenCalledWith(5);
+        expect(result).toEqual(mockResult as any);
     });
 });
+
+

@@ -3,7 +3,13 @@ import { sql } from "drizzle-orm";
 
 export const db = process.env.DATABASE_URL
     ? drizzle(process.env.DATABASE_URL)
-    : ({} as ReturnType<typeof drizzle>);
+    : {
+        select: (...args: any[]) => ({} as any),
+        execute: (...args: any[]) => ({} as any),
+        insert: (...args: any[]) => ({} as any),
+        delete: (...args: any[]) => ({} as any),
+    } as unknown as ReturnType<typeof drizzle>;
+
 
 
 export async function initDb(): Promise<void> {

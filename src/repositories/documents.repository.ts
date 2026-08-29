@@ -25,7 +25,8 @@ export class DocumentsRepository {
                 embedding: professionalProfileTable.embedding,
                 similarity: similarity
             })
-                .from(professionalProfileTable);
+                .from(professionalProfileTable)
+                .orderBy(similarity);
 
             if (locale) {
                 // Filter by exact match or normalized prefix (e.g. pt match pt-BR if needed, or exact locale)
@@ -34,12 +35,10 @@ export class DocumentsRepository {
                     .where(
                         sql`${professionalProfileTable.locale} IS NULL OR ${professionalProfileTable.locale} = ${locale} OR ${professionalProfileTable.locale} LIKE ${baseLocale + '%'}`
                     )
-                    .orderBy(similarity)
                     .limit(limit);
             }
 
             return await query
-                .orderBy(similarity)
                 .limit(limit);
         } catch (e) {
             console.error("Error finding similar documents:", e);
