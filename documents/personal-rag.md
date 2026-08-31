@@ -1,22 +1,22 @@
 ---
-title: Personal Website API (RAG System)
+title: Personal RAG (RAG System)
 type: project
 locale: pt-BR
 probable_questions:
-  - O que é a Personal Website API?
-  - Como funciona a API do site pessoal de José Henrique?
-  - Quais tecnologias são utilizadas na Personal Website API (Bun, ElysiaJS, Drizzle ORM, pgvector, Groq)?
+  - O que é o projeto Personal RAG?
+  - Como funciona a API do Personal RAG de José Henrique?
+  - Quais tecnologias são utilizadas no Personal RAG (Bun, ElysiaJS, Drizzle ORM, pgvector, Groq)?
   - Como funciona o sistema de RAG (Retrieval-Augmented Generation), embeddings e chunking neste projeto?
   - Quais são os endpoints disponíveis na API (/chat, /retrieve, /chunk/save, /embbed)?
   - Qual é o modelo de embedding utilizado na API?
   - Como é realizada a busca por similaridade vetorial no banco PostgreSQL?
 ---
 
-# Personal Website API (RAG Engine)
+# Personal RAG (RAG Engine)
 
 ## Visão Geral do Projeto
 
-A **Personal Website API** é uma API RESTful de alta performance desenvolvida por José Henrique para servir como backend inteligente e motor de RAG (Retrieval-Augmented Generation) para seu site/portfólio pessoal. A API permite responder a perguntas sobre o perfil profissional, experiências e projetos de José Henrique com extrema precisão, utilizando conhecimento extraído dinamicamente de documentos Markdown.
+O **Personal RAG** é um motor de RAG (Retrieval-Augmented Generation) e API RESTful de alta performance desenvolvida por José Henrique para servir como backend inteligente para seu site/portfólio pessoal. A API permite responder a perguntas sobre o perfil profissional, experiências e projetos de José Henrique com extrema precisão, utilizando conhecimento extraído dinamicamente de documentos Markdown.
 
 ## Arquitetura & Tecnologias
 
@@ -33,7 +33,7 @@ A aplicação segue princípios de **Clean Architecture** e separação de respo
 ## Como Funciona o Pipeline de RAG (Retrieval-Augmented Generation)
 
 1. **Ingestão e Chunking (`/chunk/save`):**
-   - A API lê os arquivos `.md` contidos no diretório `documents/` (`profile.md`, `projects.md`, `experience.md`, `personal-website-api.md`).
+   - A API lê os arquivos `.md` contidos no diretório `documents/` (`profile.md`, `projects.md`, `experience.md`, `personal-rag.md`).
    - Extrai o frontmatter (título, tipo, locale, perguntas prováveis).
    - Divide o conteúdo em chunks semanticamente ricos (tamanho de 800 caracteres com sobreposição de 50).
    - Enriquece cada chunk com o contexto do documento e perguntas frequentes relacionadas.
